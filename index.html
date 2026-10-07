@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp - Modern Chat UI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-comment"></i>
+            </div>
+            <span>ChatApp</span>
+        </div>
+
+        <nav class="main-nav">
+            <button class="nav-item active">
+                <i class="fa-solid fa-comments"></i>
+                <span>Chats</span>
+                <span class="nav-badge">5</span>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Contacts</span>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </button>
+        </nav>
+
+        <div class="quick-title">QUICK ACCESS</div>
+
+        <nav class="quick-nav">
+            <button class="nav-item">
+                <i class="fa-regular fa-star"></i>
+                <span>Starred Messages</span>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-box-archive"></i>
+                <span>Archived</span>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-ban"></i>
+                <span>Blocked</span>
+            </button>
+        </nav>
+
+        <div class="profile-card">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Moniruzzaman">
+            <div>
+                <strong>Moniruzzaman</strong>
+                <small><span class="status-dot"></span> Online</small>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+    </aside>
+
+
+    <!-- CHAT LIST -->
+    <aside class="conversation-sidebar">
+
+        <div class="search-row">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="searchInput" type="text" placeholder="Search chats..." autocomplete="off">
+            </div>
+
+            <button class="filter-btn" title="Filters">
+                <i class="fa-solid fa-sliders"></i>
+            </button>
+        </div>
+
+        <div class="chat-list" id="chatList"></div>
+
+    </aside>
+
+
+    <!-- CHAT AREA -->
+    <main class="chat-area">
+
+        <header class="chat-header">
+
+            <button class="mobile-back" id="backButton" title="Back to chats">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="chat-header-avatar">
+                <img id="headerAvatar" src="" alt="">
+                <span class="online-dot"></span>
+            </div>
+
+            <div class="chat-user">
+                <h2 id="chatName">Alex Johnson</h2>
+                <p id="chatStatus">Online</p>
+            </div>
+
+            <div class="header-actions">
+                <button title="Voice call" id="callBtn">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+
+                <button title="Video call" id="videoBtn">
+                    <i class="fa-solid fa-video"></i>
+                </button>
+
+                <button title="Toggle dark mode" id="themeBtn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+
+        </header>
+
+
+        <!-- MESSAGES -->
+        <section class="messages" id="messages"></section>
+
+
+        <!-- COMPOSER -->
+        <div class="composer-wrapper">
+
+            <div class="emoji-picker" id="emojiPicker">
+                <button>😀</button>
+                <button>😂</button>
+                <button>😍</button>
+                <button>🥰</button>
+                <button>😎</button>
+                <button>😭</button>
+                <button>😡</button>
+                <button>👍</button>
+                <button>👏</button>
+                <button>🔥</button>
+                <button>❤️</button>
+                <button>🎉</button>
+                <button>🚀</button>
+                <button>💯</button>
+                <button>😊</button>
+                <button>👋</button>
+                <button>✨</button>
+                <button>🤝</button>
+                <button>🙌</button>
+                <button>💡</button>
+            </div>
+
+            <div class="message-input-area">
+
+                <button class="input-icon emoji-btn" id="emojiBtn" title="Emoji">
+                    <i class="fa-regular fa-face-smile"></i>
+                </button>
+
+                <input id="messageInput"
+                       type="text"
+                       placeholder="Type a message..."
+                       autocomplete="off">
+
+                <button class="input-icon attachment-btn" id="attachmentBtn" title="Attach file">
+                    <i class="fa-solid fa-paperclip"></i>
+                </button>
+
+                <input id="fileInput" class="file-input" type="file">
+
+                <button class="send-btn" id="sendButton" title="Send message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
