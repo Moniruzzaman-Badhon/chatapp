@@ -6,7 +6,7 @@ A modern, clean, and responsive messaging application interface designed to prov
 ## Project Preview
 
 <p align="center">
-  <img src="./image/image" alt="Chat Preview" width="700">
+  <img src="./image/image.png" alt="Chat Preview" width="700">
 </p>
 
 ## Features
@@ -58,4 +58,3 @@ ChatApp/
 - LinkedIn: https://www.linkedin.com/in/moniruzzaman-badhon-b50153308/
 
 
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
