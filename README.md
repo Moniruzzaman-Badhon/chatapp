@@ -5,7 +5,7 @@ A modern, clean, and responsive messaging application interface designed to prov
 
 ## Project Preview
 
-![ChatApp Preview](screenshot.png)
+![ChatApp Preview](image.png)
 
 ## Features
 
@@ -52,9 +52,8 @@ ChatApp/
 
 **Moniruzzaman Badhon**
 
-- GitHub: [Your GitHub Profile]([https://github.com/YOUR-USERNAME](https://github.com/Moniruzzaman-Badhon))
-- LinkedIn: [Your LinkedIn Profile](www.linkedin.com/in/moniruzzaman-badhon-b50153308)
+- GitHub: https://github.com/Moniruzzaman-Badhon
+- LinkedIn: https://www.linkedin.com/in/moniruzzaman-badhon-b50153308/
 
-## 📄 License
 
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
