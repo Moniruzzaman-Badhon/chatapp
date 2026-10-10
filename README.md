@@ -4,6 +4,7 @@
 A modern, clean, and responsive messaging application interface designed to provide a smooth and user-friendly chatting experience. ChatApp features a sidebar navigation, conversation list, chat window, online status indicators, and a message input area.
 
 ## Project Preview
+Live link: https://moniruzzaman-badhon.github.io/chatapp/
 
 <p align="center">
   <img src="./image/image.png" alt="Chat Preview" width="700">
