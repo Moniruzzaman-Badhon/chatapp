@@ -5,7 +5,9 @@ A modern, clean, and responsive messaging application interface designed to prov
 
 ## Project Preview
 
-![ChatApp Preview](src="./image/image.png")
+<p align="center">
+  <img src="./image/image" alt="Chat Preview" width="700">
+</p>
 
 ## Features
 
